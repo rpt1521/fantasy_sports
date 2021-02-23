@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             player_image_ids.add(getResources().getIdentifier( "player" + i,  "drawable", "csc331.frenchtoastmafia.fantasysports"));
         }
 
-        // Temporary until DB
+        // Temporary until DB Commit Test
         String[] player_names = new String[2];
         player_names[0] = "Leonard Fournette\nLA LSU A";
         player_names[1] = "Alvin Kamara\nTE NOS A";
