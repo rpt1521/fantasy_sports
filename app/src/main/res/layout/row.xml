@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table_rows"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:shrinkColumns="0">
+
+    <TableRow android:id="@+id/table_row">
+
+        <!-- Two Letter Position Acronym -->
+        <TextView
+            android:id="@+id/position"
+
+            android:layout_height="match_parent"
+            android:layout_width="30dp"
+
+            android:background="@color/teal_700"
+
+            android:text="PO"
+
+            android:paddingTop="25dp"
+            android:paddingLeft="6dp" />
+
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/player_image"
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+
+        <!-- Name, State, Position, Status -->
+        <TextView
+            android:id="@+id/information"
+
+            android:layout_width="199dp"
+            android:layout_height="match_parent"
+
+            android:text="Name\nAL POS S"
+
+            android:paddingTop="17dp"
+            android:paddingLeft="10dp" />
+
+
+        <!-- Stat 1 -->
+        <TextView
+            android:id="@+id/stat_1"
+
+            android:layout_width="136dp"
+            android:layout_height="match_parent"
+
+            android:text="--"
+
+            android:paddingTop="23dp"
+            android:paddingLeft="5dp" />
+
+
+        <!-- Stat 2 -->
+        <TextView
+            android:id="@+id/stat_2"
+
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+
+            android:text="--"
+
+            android:paddingTop="23dp" />
+
+    </TableRow>
+
+</TableLayout>
