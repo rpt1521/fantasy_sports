@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         LayoutInflater inflater = getLayoutInflater();
 
-        // Add columns to main view test
+        // Add columns to main view
         TableLayout main = findViewById(R.id.table_layout);
         View columns = inflater.inflate(R.layout.columns, null);
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             player_image_ids.add(getResources().getIdentifier( "player" + i,  "drawable", "csc331.frenchtoastmafia.fantasysports"));
         }
 
-        // Temporary dummy data until able to pull from DB pull request test
+        // Temporary dummy data until able to pull from DB
         String[] player_names = new String[2];
         player_names[0] = "Leonard Fournette\nLA LSU A";
         player_names[1] = "Alvin Kamara\nTE NOS A";
