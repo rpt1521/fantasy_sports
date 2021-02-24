@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
         LayoutInflater inflater = getLayoutInflater();
 
-        // Add columns to main view
+        // Add columns to main view test
         TableLayout main = findViewById(R.id.table_layout);
         View columns = inflater.inflate(R.layout.columns, null);
 
