@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rank_table_rows"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:shrinkColumns="0">
+
+    <TableRow android:id="@+id/rank_table_row">
+
+        <!-- Two Letter Position Acronym -->
+        <TextView
+            android:id="@+id/rank"
+
+            android:layout_height="match_parent"
+            android:layout_width="26dp"
+
+            android:background="@color/blue"
+            android:textColor="@color/white"
+
+            android:text="1"
+
+            android:paddingTop="25dp"
+            android:paddingLeft="9dp" />
+
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/user_image"
+
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+
+            tools:srcCompat="@tools:sample/avatars[0]" />
+
+
+        <!-- Name, State, Position, Status -->
+        <TextView
+            android:id="@+id/user_information"
+
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+
+            android:text="Richard\nTeam Almighty"
+
+            android:paddingTop="17dp"
+            android:paddingLeft="10dp" />
+
+
+        <!-- Stat 1 -->
+        <TextView
+            android:id="@+id/wins"
+
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+
+            android:text="5"
+
+            android:paddingTop="23dp"
+            android:paddingLeft="46dp" />
+
+
+        <!-- Stat 2 -->
+        <TextView
+            android:id="@+id/losses"
+
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+
+            android:text="10"
+
+            android:paddingTop="23dp" />
+
+    </TableRow>
+
+</TableLayout>

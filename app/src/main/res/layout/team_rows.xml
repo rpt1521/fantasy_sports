@@ -19,7 +19,8 @@
             android:layout_height="match_parent"
             android:layout_width="30dp"
 
-            android:background="@color/teal_700"
+            android:background="@color/blue"
+            android:textColor="@color/white"
 
             android:text="PO"
 
@@ -67,7 +68,40 @@
         <TextView
             android:id="@+id/stat_2"
 
-            android:layout_width="10dp"
+            android:layout_width="146dp"
+            android:layout_height="match_parent"
+
+            android:text="--"
+
+            android:paddingTop="23dp" />
+
+        <!-- Stat 3 -->
+        <TextView
+            android:id="@+id/stat_3"
+
+            android:layout_width="146dp"
+            android:layout_height="match_parent"
+
+            android:text="--"
+
+            android:paddingTop="23dp" />
+
+        <!-- Stat 3 -->
+        <TextView
+            android:id="@+id/stat_4"
+
+            android:layout_width="146dp"
+            android:layout_height="match_parent"
+
+            android:text="--"
+
+            android:paddingTop="23dp" />
+
+        <!-- Stat 3 -->
+        <TextView
+            android:id="@+id/stat_5"
+
+            android:layout_width="146dp"
             android:layout_height="match_parent"
 
             android:text="--"

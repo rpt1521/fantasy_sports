@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:id="@+id/rank_table_columns"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*" >
+
+        <TableRow>
+
+            <!-- Stat 1 Header -->
+            <TextView
+                android:id="@+id/users"
+
+                android:layout_marginLeft="113dp"
+
+                android:text="USER"
+
+                android:paddingRight="98dp"/>
+
+            <!-- Stat 2 Header -->
+            <TextView
+                android:id="@+id/wins"
+
+                android:text="WINS"
+
+                android:paddingRight="25dp" />
+
+            <!-- Stat 3 Header -->
+            <TextView
+                android:id="@+id/losses"
+
+                android:text="LOSSES" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</HorizontalScrollView>

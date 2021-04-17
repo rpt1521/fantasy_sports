@@ -20,21 +20,21 @@
                 android:layout_marginLeft="34dp"
 
                 android:text="STARTERS"
-                android:paddingRight="200dp"/>
+                android:paddingRight="195dp"/>
 
             <!-- Stat 2 Header -->
             <TextView
                 android:id="@+id/stat_1_header"
 
-                android:text="Proj"
+                android:text="PROJ"
 
-                android:paddingRight="100dp" />
+                android:paddingRight="92dp" />
 
             <!-- Stat 3 Header -->
             <TextView
                 android:id="@+id/stat_2_header"
 
-                android:text="Score"
+                android:text="SCORE"
 
                 android:paddingRight="100dp" />
 
@@ -42,7 +42,7 @@
             <TextView
                 android:id="@+id/stat_3_header"
 
-                android:text="Stat 3"
+                android:text="STAT 3"
 
                 android:paddingRight="100dp" />
 
@@ -51,7 +51,7 @@
             <TextView
                 android:id="@+id/stat_4_header"
 
-                android:text="Stat 4"
+                android:text="STAT 4"
 
                 android:paddingRight="100dp" />
 
@@ -60,7 +60,7 @@
             <TextView
                 android:id="@+id/stat_5_header"
 
-                android:text="Stat 5"
+                android:text="STAT 5"
 
                 android:paddingRight="100dp" />
 
