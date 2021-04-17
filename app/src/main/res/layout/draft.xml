@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/draft_linear_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/draft_image"
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+
+        android:layout_gravity="center"
+        tools:srcCompat="@tools:sample/avatars[0]"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/draft_header"
+
+        android:layout_gravity="center"
+
+        android:text="Drafting Phase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="25dp"/>
+
+    <Spinner
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/draft_spinner"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+
+        <Button android:id="@+id/draft_add_button"
+
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:text="add"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"/>
+
+        <Button android:id="@+id/draft_remove_button"
+
+            android:layout_width="140dp"
+            android:layout_height="75dp"
+            android:text="remove"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/draft_button"
+
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="begin"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

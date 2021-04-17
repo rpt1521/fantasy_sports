@@ -6,7 +6,7 @@
     android:layout_height="match_parent" >
 
     <TableLayout
-        android:id="@+id/table_columns"
+        android:id="@+id/team_table_columns"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:stretchColumns="*" >

@@ -44,7 +44,7 @@ public class TeamFragment extends Fragment {
         // Update amount of rows needed based on number of players from DB
         View[] rows = new View[32];
 
-        TableLayout main_columns = columns.findViewById(R.id.table_columns);
+        TableLayout main_columns = columns.findViewById(R.id.team_table_columns);
 
         // Update loop with appropriate number of rows based on players from DB
         for (int i = 0; i <= 1; i++) {

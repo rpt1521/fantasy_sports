@@ -1,44 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/linear_layout"
+<LinearLayout android:id="@+id/home_linear_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <TextView
+        android:id="@+id/home_team_name"
+
+        android:layout_gravity="center"
+
+        android:text="Team Almighty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"/>
 
     <ImageView
-        android:id="@+id/splash_image"
+        android:id="@+id/home_user_image"
 
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
 
         android:layout_gravity="center"
         tools:srcCompat="@tools:sample/avatars[0]"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="20dp"/>
 
     <TextView
-        android:id="@+id/draft_header"
+        android:id="@+id/home_username"
 
         android:layout_gravity="center"
 
-        android:text="DRAFT"
+        android:text="John Doe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40dp"/>
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"/>
 
-    <Spinner
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/spinner"
-        android:layout_width="305dp"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown"
-        android:spinnerMode="dropdown"
-        android:layout_gravity="center"
-        android:layout_marginBottom="20dp" />
 
-    <Button android:id="@+id/play_button"
+    <Button android:id="@+id/home_play_button"
 
         android:layout_width="300dp"
         android:layout_height="75dp"
@@ -46,6 +48,77 @@
         android:layout_marginBottom="20dp"
         android:layout_gravity="center"/>
 
+    <TextView
+        android:id="@+id/home_week"
 
+        android:layout_gravity="center"
+
+        android:text="Week Number 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/home_wins"
+
+            android:layout_gravity="center"
+
+            android:text="Wins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/home_losses"
+
+            android:layout_gravity="center"
+
+            android:text="Losses"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/home_win_count"
+
+            android:layout_gravity="center"
+
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:padding="5dp"
+            android:layout_marginRight="140dp" />
+
+        <TextView
+            android:id="@+id/home_loss_count"
+
+            android:layout_gravity="center"
+
+            android:text="0"
+            android:padding="5dp"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:layout_marginLeft="-35dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>

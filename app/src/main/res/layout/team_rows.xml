@@ -10,7 +10,7 @@
 
     android:shrinkColumns="0">
 
-    <TableRow android:id="@+id/table_row">
+    <TableRow android:id="@+id/team_table_row">
 
         <!-- Two Letter Position Acronym -->
         <TextView
@@ -42,7 +42,7 @@
         <TextView
             android:id="@+id/information"
 
-            android:layout_width="199dp"
+            android:layout_width="228dp"
             android:layout_height="match_parent"
 
             android:text="Name\nAL POS S"

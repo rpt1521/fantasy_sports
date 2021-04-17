@@ -16,10 +16,9 @@ import android.widget.Spinner;
 
 import androidx.fragment.app.Fragment;
 
-public class HomeFragment extends Fragment implements AdapterView.OnItemSelectedListener {
+public class HomeFragment extends Fragment {
 
-    private Spinner spinner;
-    private static final String[] paths = {"", "Richard Tran", "Tyler Landau", "DJ Taylor", "Test1", "Test2", "Test3", "Test4", "Test5", "Test6", "Test7"};
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,17 +29,10 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemSelected
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View home = inflater.inflate(R.layout.home, null);
-        ImageView user_image = (ImageView) home.findViewById(R.id.splash_image);
-        user_image.setImageResource(R.drawable.splash);
+        ImageView user_image = (ImageView) home.findViewById(R.id.home_user_image);
+        user_image.setImageResource(R.drawable.profile);
 
-        spinner = (Spinner) home.findViewById(R.id.spinner);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_item, paths);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(this);
-
-        final Button button = (Button) home.findViewById(R.id.play_button);
+        final Button button = (Button) home.findViewById(R.id.home_play_button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -57,15 +49,23 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemSelected
                 builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String number_of_weeks;
-                        if (input.getText().equals("")) {
-                            number_of_weeks = "0";
+                        String number_of_weeks = "";
+                        String empty = "";
+                        boolean number = false;
+
+                        number_of_weeks = input.getText().toString();
+
+                        try {
                             Integer.parseInt(number_of_weeks);
                         }
 
-                        else {
-                            number_of_weeks = input.getText().toString();
-                            Integer.parseInt(number_of_weeks);
+                        catch (Exception e) {
+                            new AlertDialog.Builder(getActivity())
+                            .setTitle("Invalid Number")
+                            .setMessage("You have entered an invalid number. Please press play again and enter a valid number.")
+
+                            .setIcon(android.R.drawable.ic_dialog_alert)
+                            .show();
                         }
 
                     }
@@ -85,28 +85,6 @@ public class HomeFragment extends Fragment implements AdapterView.OnItemSelected
 
         return home;
 
-    }
-
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-
-        switch (position) {
-            case 0:
-                // action here
-                break;
-            case 1:
-                // action here
-                break;
-            case 2:
-                // action here
-                break;
-
-        }
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-        // action here
     }
 
 }
