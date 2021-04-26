@@ -22,8 +22,7 @@
 
             android:text="PO"
 
-            android:paddingTop="25dp"
-            android:paddingLeft="6dp" />
+            android:gravity="center" />
 
 
         <!-- Profile Image -->
@@ -40,10 +39,10 @@
         <TextView
             android:id="@+id/information"
 
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="match_parent"
 
-            android:text="Name\nAL POS S"
+            android:text="Charles Bennette\nAL POS S"
 
             android:paddingTop="17dp"
             android:paddingLeft="10dp" />
@@ -51,59 +50,239 @@
 
         <!-- Stat 1 -->
         <TextView
-            android:id="@+id/stat_1"
+            android:id="@+id/num_gp"
 
-            android:layout_width="136dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
 
-            android:text="--"
+            android:text="0"
 
-            android:paddingTop="23dp"
-            android:paddingLeft="5dp" />
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
 
 
         <!-- Stat 2 -->
         <TextView
-            android:id="@+id/stat_2"
+            android:id="@+id/num_cmp"
 
-            android:layout_width="146dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
 
-            android:text="--"
+            android:text="0"
 
+            android:gravity="center_horizontal"
             android:paddingTop="23dp" />
 
         <!-- Stat 3 -->
         <TextView
-            android:id="@+id/stat_3"
+            android:id="@+id/num_att"
 
-            android:layout_width="146dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
 
-            android:text="--"
+            android:text="0"
 
+            android:gravity="center_horizontal"
             android:paddingTop="23dp" />
 
         <!-- Stat 3 -->
         <TextView
-            android:id="@+id/stat_4"
+            android:id="@+id/num_cmp_p"
 
-            android:layout_width="146dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
 
-            android:text="--"
+            android:text="0.0"
 
+            android:gravity="center_horizontal"
             android:paddingTop="23dp" />
 
         <!-- Stat 3 -->
         <TextView
-            android:id="@+id/stat_5"
+            android:id="@+id/num_yds"
 
-            android:layout_width="146dp"
+            android:layout_width="70dp"
             android:layout_height="match_parent"
 
-            android:text="--"
+            android:text="0"
 
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_avg"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0.0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_yds_g"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0.0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_lng"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_td"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_int"
+
+            android:layout_width="69dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_sack"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_syl"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_qbr"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0.0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_rtg"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0.0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_big"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_fum"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_lst"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_fd"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_rec"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_tgts"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
+            android:paddingTop="23dp" />
+
+        <TextView
+            android:id="@+id/num_yac"
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            android:text="0"
+
+            android:gravity="center_horizontal"
             android:paddingTop="23dp" />
 
     </TableRow>

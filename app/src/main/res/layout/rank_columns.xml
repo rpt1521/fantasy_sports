@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<HorizontalScrollView
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TableLayout
         android:id="@+id/rank_table_columns"
@@ -17,28 +18,33 @@
             <TextView
                 android:id="@+id/users"
 
-                android:layout_marginLeft="113dp"
+                android:layout_width="70dp"
+                android:layout_marginLeft="95dp"
 
                 android:text="USER"
-
-                android:paddingRight="98dp"/>
+                android:gravity="center_horizontal"
+                />
 
             <!-- Stat 2 Header -->
             <TextView
                 android:id="@+id/wins"
 
                 android:text="WINS"
+                android:layout_width="65dp"
 
-                android:paddingRight="25dp" />
+                android:layout_marginLeft="95dp"
+                android:gravity="center_horizontal"/>
 
             <!-- Stat 3 Header -->
             <TextView
                 android:id="@+id/losses"
 
-                android:text="LOSSES" />
+                android:layout_width="65dp"
+                android:text="LOSSES"
+                android:gravity="center_horizontal"/>
 
         </TableRow>
 
     </TableLayout>
 
-</HorizontalScrollView>
+</ScrollView>

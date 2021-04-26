@@ -53,10 +53,11 @@
 
         android:layout_gravity="center"
 
-        android:text="Week Number 1"
+        android:text="Week Number: 1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp" />
+        android:textSize="40dp"
+        android:layout_marginBottom="20dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -66,27 +67,22 @@
         <TextView
             android:id="@+id/home_wins"
 
-            android:layout_gravity="center"
+            android:gravity="center"
 
             android:text="Wins"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:padding="5dp"
-            android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp"/>
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/home_losses"
 
-            android:layout_gravity="center"
+            android:gravity="center"
 
             android:text="Losses"
-            android:padding="5dp"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:layout_marginTop="20dp"/>
+            android:textSize="30dp"/>
 
     </LinearLayout>
 
@@ -101,11 +97,11 @@
             android:layout_gravity="center"
 
             android:text="0"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:textSize="30dp"
-            android:padding="5dp"
-            android:layout_marginRight="140dp" />
+
+            android:gravity="center" />
 
         <TextView
             android:id="@+id/home_loss_count"
@@ -113,11 +109,10 @@
             android:layout_gravity="center"
 
             android:text="0"
-            android:padding="5dp"
-            android:layout_width="30dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:layout_marginLeft="-35dp"/>
+            android:gravity="center"
+            android:textSize="30dp"/>
 
     </LinearLayout>
 

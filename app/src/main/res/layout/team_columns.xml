@@ -1,71 +1,203 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<HorizontalScrollView
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TableLayout
-        android:id="@+id/team_table_columns"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:stretchColumns="*" >
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-        <TableRow>
+        <TableLayout
+            android:id="@+id/team_table_columns"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*" >
 
-            <!-- Stat 1 Header -->
-            <TextView
-                android:id="@+id/starter_header"
+            <TableRow>
 
-                android:layout_marginLeft="34dp"
+                <TextView
+                    android:id="@+id/players"
+                    android:layout_width="70dp"
+                    android:layout_marginLeft="32dp"
+                    android:text="PLAYERS"
+                    android:gravity="center_horizontal" />
 
-                android:text="STARTERS"
-                android:paddingRight="195dp"/>
+                <TextView
+                    android:id="@+id/gp"
 
-            <!-- Stat 2 Header -->
-            <TextView
-                android:id="@+id/stat_1_header"
+                    android:text="GP"
 
-                android:text="PROJ"
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp"
+                    android:layout_marginLeft="153dp"/>
 
-                android:paddingRight="92dp" />
+                <TextView
+                    android:id="@+id/cmp"
 
-            <!-- Stat 3 Header -->
-            <TextView
-                android:id="@+id/stat_2_header"
+                    android:text="CMP"
 
-                android:text="SCORE"
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
 
-                android:paddingRight="100dp" />
+                <TextView
+                    android:id="@+id/att"
 
-            <!-- Stat 4 Header -->
-            <TextView
-                android:id="@+id/stat_3_header"
+                    android:text="ATT"
 
-                android:text="STAT 3"
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
 
-                android:paddingRight="100dp" />
+                <TextView
+                    android:id="@+id/cmp_p"
 
+                    android:text="CMP%"
 
-            <!-- Stat 5 Header -->
-            <TextView
-                android:id="@+id/stat_4_header"
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
 
-                android:text="STAT 4"
+                <TextView
+                    android:id="@+id/yds"
 
-                android:paddingRight="100dp" />
+                    android:text="YDS"
 
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
 
-            <!-- Stat 6 Header -->
-            <TextView
-                android:id="@+id/stat_5_header"
+                <TextView
+                    android:id="@+id/avg"
 
-                android:text="STAT 5"
+                    android:text="AVG"
 
-                android:paddingRight="100dp" />
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
 
-        </TableRow>
+                <TextView
+                    android:id="@+id/yds_g"
 
-    </TableLayout>
+                    android:text="YDS/G"
 
-</HorizontalScrollView>
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/lng"
+
+                    android:text="LNG"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/td"
+
+                    android:text="TD"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/inter"
+
+                    android:text="INT"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/sack"
+
+                    android:text="SACK"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/syl"
+
+                    android:text="SYL"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/qbr"
+
+                    android:text="QBR"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/rtg"
+
+                    android:text="RTG"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/big"
+
+                    android:text="BIG"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/fum"
+
+                    android:text="FUM"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/lst"
+
+                    android:text="LST"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/fd"
+
+                    android:text="FD"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/rec"
+
+                    android:text="REC"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/tgts"
+
+                    android:text="TGTS"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+                <TextView
+                    android:id="@+id/yac"
+
+                    android:text="YAC"
+
+                    android:gravity="center_horizontal"
+					android:layout_width="70dp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

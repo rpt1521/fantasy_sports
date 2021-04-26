@@ -29,12 +29,43 @@
         android:gravity="center"
         android:textSize="25dp"/>
 
-
-    <Button android:id="@+id/splash_play_button"
+    <Button android:id="@+id/splash_avatar_button"
 
         android:layout_width="300dp"
         android:layout_height="75dp"
-        android:text="Enter"
+        android:text="choose avatar"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <Button android:id="@+id/splash_continue_avatar_button"
+
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="continue"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <Button android:id="@+id/splash_name_button"
+
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="Enter Name"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <Button android:id="@+id/splash_team_name_button"
+
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="Enter Team Name"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"/>
+
+    <Button android:id="@+id/splash_continue_button"
+
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:text="Continue"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center"/>
 

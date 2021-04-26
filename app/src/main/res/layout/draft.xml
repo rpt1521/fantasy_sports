@@ -1,40 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:id="@+id/draft_linear_layout"
+
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/draft_image"
+    <LinearLayout android:id="@+id/draft_linear_layout"
 
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:tools="http://schemas.android.com/tools">
 
-        android:layout_gravity="center"
-        tools:srcCompat="@tools:sample/avatars[0]"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="70dp"/>
+        <ImageView
+            android:id="@+id/draft_image"
 
-    <TextView
-        android:id="@+id/draft_header"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
 
-        android:layout_gravity="center"
+            android:layout_gravity="center"
+            tools:srcCompat="@tools:sample/avatars[0]" />
 
-        android:text="Drafting Phase"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:textSize="25dp"/>
+        <TextView
+            android:id="@+id/draft_header"
+
+            android:layout_gravity="center"
+
+            android:text="Drafting Phase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"/>
 
 
-    <Button android:id="@+id/draft_button"
+        <Button android:id="@+id/draft_begin_button"
 
-        android:layout_width="300dp"
-        android:layout_height="75dp"
-        android:text="begin"
-        android:layout_marginBottom="20dp"
-        android:layout_gravity="center"/>
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="begin"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
 
-</LinearLayout>
+        <Button android:id="@+id/draft_continue_button"
+
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:text="continue"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/draft_team_name"
+
+            android:layout_gravity="center"
+
+            android:text="Team Almighty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -5,7 +5,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
+
+import android.content.Intent;
 import android.os.Bundle;
+
+import java.io.Serializable;
+
+import csc331.frenchtoastmafia.entities.Player;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
         ViewPager vpPager = (ViewPager) findViewById(R.id.vpPager);
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager());
         vpPager.setAdapter(adapterViewPager);
-
     }
 
     public static class MyPagerAdapter extends FragmentPagerAdapter {
